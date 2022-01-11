@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dongle:wght@400;700&family=Gothic+A1:wght@100&family=Hi+Melody&family=Moon+Dance&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* body background*/
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("/image/section\ 배경/라일락2.jpg");
+  background-size: cover;
+}
+
+/* section 영역 */
+section {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  right: 0;
+  width: 80%;
+  background-color: #fff;
+}
+
+.banner {
+  position: relative;
+  float: right;
+  width: 80%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*PC aside navbar css*/
+aside {
+  position: sticky;
+  float: left;
+  left: 0;
+  top: 0;
+  width: 20%;
+  height: 100vh;
+  background-color: #fff;
+  opacity: 0.95;
+  font-family: "Moon Dance", cursive;
+  font-weight: bold;
+}
+
+.aside-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  float: left;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.aside-logo img {
+  width: 200px;
+}
+
+aside nav {
+  position: relative;
+  z-index: 100;
+  left: 0;
+}
+
+aside nav li {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+aside nav li a {
+  width: 100%;
+  padding: 20px 40px;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+aside nav li a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+aside nav ul li.fix a {
+  color: #fff;
+  background-color: #000;
+}
+
+/*mobile nav button css*/
+.hamburger {
+  position: absolute;
+  display: none;
+  top: 9%;
+  float: right;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+  z-index: 200;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 35px;
+  height: 6px;
+  display: block;
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+/*Music video slider banner 영역 및 css*/
+
+.banner .slider {
+  width: 100%;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider iframe {
+  position: relative;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  z-index: 0;
+}
+
+.banner .navigator {
+  position: absolute;
+  z-index: 200;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .navigator li {
+  list-style: none;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 4px;
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner .navigator li img {
+  width: 150px;
+  transition: 0.5s;
+}
+
+.banner .navigator li img:hover {
+  width: 200px;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 167px;
+  margin-bottom: 2000px;
+}
+
+.part2 img {
+  width: 1000px;
+  height: 550px;
+}
