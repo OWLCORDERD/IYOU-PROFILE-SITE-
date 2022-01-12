@@ -191,8 +191,8 @@ aside nav ul li.fix a {
 }
 
 .part2 img {
-  width: 1000px;
-  height: 550px;
+  width: 900px;
+  height: 420px;
 }
 
 .ELBUM {
@@ -212,13 +212,89 @@ aside nav ul li.fix a {
   width: 100%;
   text-align: center;
   font-weight: bold;
-  font-family: "Dongle", cursive;
-  font-size: 40px;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 30px;
 }
 
 .ELBUM .ELBUM_title img {
   width: 400px;
   padding: 50px;
+}
+
+.ELBUM_SUB {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ELBUM_SUB .LEFT_SUB {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ELBUM_SUB .LEFT_SUB .LEFT_SUB_1 p {
+  text-align: center;
+  padding: 10px;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: bold;
+}
+
+.ELBUM_SUB .LEFT_SUB .LEFT_SUB_2 h1 {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.ELBUM_SUB .LEFT_SUB .LEFT_SUB_2 p {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.ELBUM_SUB .LEFT_SUB .LEFT_SUB_IMG {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.ELBUM_SUB .LEFT_SUB .LEFT_SUB_IMG img {
+  width: 70px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.ELBUM_SUB .RIGHT_SUB {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ELBUM_SUB .RIGHT_SUB .SONG h1 {
+  font-family: "Gothic A1", sans-serif;
+  padding: 20px;
+  font-size: 22px;
+}
+
+.ELBUM_SUB .RIGHT_SUB .SONG_link {
+  display: flex;
+  flex-direction: column;
+}
+
+.ELBUM_SUB .RIGHT_SUB .SONG_link img {
+  width: 48px;
+  margin-top: 18px;
 }
 
 @media screen and (max-width: 900px) {
