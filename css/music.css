@@ -187,12 +187,12 @@ aside nav ul li.fix a {
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 500px;
   padding: 167px;
 }
 
 .part2 img {
-  width: 900px;
-  height: 420px;
+  width: 500px;
 }
 
 .ELBUM {
@@ -200,24 +200,24 @@ aside nav ul li.fix a {
   width: 100%;
 }
 
-.ELBUM .ELBUM_title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.ELBUM .ELBUM_title .title {
+.ELBUM_title {
   width: 100%;
   text-align: center;
   font-weight: bold;
-  font-family: "Gothic A1", sans-serif;
-  font-size: 30px;
+  font-family: "Hi Melody", cursive;
+  font-size: 50px;
 }
 
-.ELBUM .ELBUM_title img {
-  width: 400px;
+.title_img {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.title_img img {
+  width: 300px;
   padding: 50px;
 }
 
@@ -250,14 +250,14 @@ aside nav ul li.fix a {
   font-weight: bold;
   font-size: 30px;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .ELBUM_SUB .LEFT_SUB .LEFT_SUB_2 p {
   font-family: "Gothic A1", sans-serif;
   font-weight: bold;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .ELBUM_SUB .LEFT_SUB .LEFT_SUB_IMG {
@@ -265,7 +265,7 @@ aside nav ul li.fix a {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .ELBUM_SUB .LEFT_SUB .LEFT_SUB_IMG img {
@@ -283,28 +283,32 @@ aside nav ul li.fix a {
 
 .ELBUM_SUB .RIGHT_SUB .SONG h1 {
   font-family: "Gothic A1", sans-serif;
-  padding: 20px;
-  font-size: 22px;
+  padding: 2rem;
+  font-size: 20px;
 }
 
 .ELBUM_SUB .RIGHT_SUB .SONG_link {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.ELBUM_SUB .RIGHT_SUB .SONG_link p {
+  padding: 1.15rem;
 }
 
 .ELBUM_SUB .RIGHT_SUB .SONG_link img {
-  width: 48px;
-  margin-top: 18px;
+  width: 50px;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
   .part2 {
-    padding: 30px 0 30px 0;
+    padding: 10% 0 10% 0;
   }
 
   .part2 img {
-    width: 350px;
-    height: 200px;
+    width: 80%;
   }
   aside {
     display: none;
@@ -325,5 +329,43 @@ aside nav ul li.fix a {
 
   .banner .navigator li img:hover {
     width: 80px;
+  }
+
+  .ELBUM_SUB {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ELBUM_SUB .LEFT_SUB_IMG {
+    margin-bottom: 5rem;
+  }
+
+  .ELBUM_SUB .LEFT_SUB p {
+    font-size: 16px;
+  }
+
+  .ELBUM_SUB .LEFT_SUB h1 {
+    font-size: 20px;
+  }
+
+  .ELBUM_SUB .RIGHT_SUB {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .ELBUM_SUB .RIGHT_SUB .SONG h1 {
+    font-size: 20px;
+    padding: 2rem;
+  }
+
+  .ELBUM_SUB .RIGHT_SUB .SONG_link p {
+    padding: 1.1rem;
+  }
+  .ELBUM_SUB .RIGHT_SUB .SONG_link img {
+    width: 50px;
   }
 }
