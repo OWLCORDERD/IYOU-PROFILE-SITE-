@@ -1,21 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dongle:wght@400;700&family=Gothic+A1:wght@100&family=Hi+Melody&family=Moon+Dance&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all .2s linear;
 }
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width : 1rem;
+  }
+  
+html::-webkit-scrollbar-track{
+    background: transparent;
+  }
+
+html::-webkit-scrollbar-thumb{
+    background: rgb(219, 152, 152);
+    border-radius: 5rem;
+  }
 
 /* body background*/
 
 body {
   width: 100%;
   height: 100%;
-  background-image: url("/image/section\ 배경/라일락2.jpg");
   background-size: cover;
+  background-image: url("/image/section\ 배경/라일락2.jpg");
 }
 
 /* section 영역 */
@@ -25,7 +47,8 @@ section {
   z-index: 1;
   right: 0;
   width: 80%;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding : 5rem;
 }
 
 /* PC banner css */
@@ -39,12 +62,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .main_slider {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 85%;
+  height: 70vh;
   background-color: #fff;
 }
 
@@ -70,7 +94,7 @@ section {
 }
 
 .main_slider .slides .btn.active {
-  background-color: #fff;
+  background-color: #000;
 }
 
 .main_slider .slides .slide img {
@@ -78,35 +102,6 @@ section {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-}
-
-.main_slider .slide .info {
-  position: absolute;
-  width: 100%;
-  top: 40%;
-  padding: 20px 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-.main_slider .slide .info h1 {
-  font-family: "Caveat", cursive;
-  transition: 2s;
-  font-size: 100px;
-  font-weight: bold;
-  padding: 20px 0;
-  color: #fff;
-}
-
-.main_slider .slide .info p {
-  font-family: "Dongle", sans-serif;
-  width: 60%;
-  height: 150px;
-  padding: 20px;
-  font-size: 35px;
-  font-weight: bold;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.3);
 }
 
 .navigation {
@@ -125,7 +120,7 @@ section {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.5);
   margin-left: 20px;
   cursor: pointer;
 }
@@ -144,8 +139,7 @@ aside {
   top: 0;
   width: 20%;
   height: 100vh;
-  background-color: #fff;
-  opacity: 0.95;
+  background-color: rgb(255, 255, 255);
   font-family: "Moon Dance", cursive;
   font-weight: bold;
 }
@@ -220,66 +214,6 @@ aside nav ul li.fix a {
   margin-top: 5px;
 }
 
-/*Music video slider banner 영역 및 css*/
-
-.banner .slider {
-  width: 100%;
-  transition: 0.5s;
-}
-
-.slider iframe {
-  position: relative;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70vh;
-  z-index: 0;
-}
-
-.banner .navigator {
-  position: absolute;
-  z-index: 200;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.banner .navigator li {
-  list-style: none;
-  cursor: pointer;
-  margin: 0 10px;
-  border-radius: 4px;
-  padding: 3px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.banner .navigator li img {
-  width: 150px;
-  transition: 0.5s;
-}
-
-.banner .navigator li img:hover {
-  width: 200px;
-}
-/* PC section banner css*/
-
-.part1 {
-  padding: 50px 0 50px 0;
-  width: 100%;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.part1 img {
-  width: 500px;
-}
-
 /* 프로필 타이틀 제목 css*/
 
 .profile_title {
@@ -308,16 +242,17 @@ aside nav ul li.fix a {
   position: relative;
   z-index: 10;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: "Hi Melody", cursive;
+  margin-top : 7rem;
 }
 
 /*프로필 img css */
 .profile-image {
-  width: 150px;
-  height: 150px;
+  width: 18rem;
+  height: 18rem;
   overflow: hidden;
   border: 5px solid #fff;
   position: relative;
@@ -325,7 +260,21 @@ aside nav ul li.fix a {
 }
 
 .profile-image img {
-  width: 150px;
+  width: 18rem;
+}
+
+.profile-image_INSTA {
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
+  border: 5px solid #fff;
+  position: relative;
+  border-radius: 50%;
+  margin : 1rem;
+}
+
+.profile-image_INSTA img {
+  width: 8rem;
 }
 
 /* 프로필 소개 부모 영역 css */
@@ -334,20 +283,29 @@ aside nav ul li.fix a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 10%;
 }
 
 /* 프로필 소개 부모에 속해있는 자식요소 영역 css */
-.name {
-  font-size: 30px;
-  letter-spacing: 0.5rem;
+.introduce .main_title{
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  padding : 3rem 0;
   font-weight: bold;
 }
 
-.sub-title {
-  margin-top: 10%;
-  font-size: 20px;
+.name {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
   font-weight: bold;
+  color : rgb(146, 146, 146);
+  padding : 1.5rem 0 3rem 0;
+}
+
+.sub-title {
+  font-family: 'Sunflower', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding : 1.2rem 0;
 }
 
 .introduce_2 {
@@ -356,12 +314,12 @@ aside nav ul li.fix a {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 5%;
-  font-family: "Hi Melody", cursive;
+  padding : 5rem 0;
+  font-family: 'Sunflower', sans-serif;
 }
 
 .introduce_2 img {
-  width: 70px;
+  width: 5rem;
 }
 
 .melon,
@@ -399,16 +357,16 @@ section .INSTAGRAM_profile {
 }
 
 .sub-information p {
-  font-family: "Dongle", sans-serif;
+  font-family: 'Sunflower', sans-serif;
   font-weight: bold;
   margin-left: 20px;
-  font-size: 25px;
+  font-size: 1rem;
 }
 
 .sub-information button {
   font-family: "Gothic A1", sans-serif;
   font-weight: bold;
-  width: 120px;
+  width: 100px;
   height: 40px;
   background-color: rgb(77, 140, 192);
   border-style: none;
@@ -452,26 +410,28 @@ section .INSTAGRAM_profile {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10px 0 50px 0;
+  padding: 5rem 0 10rem 0;
 }
 
 .IU-main .medal {
-  width: 50px;
+  width: 4rem;
+  margin : 1rem;
 }
 
 .IU-main h1 {
-  font-family: "Dongle", sans-serif;
-  width: 400px;
-  font-size: 40px;
+  font-family: 'Sunflower', sans-serif;
+  width: 30rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .IU-main p {
-  font-family: "Dongle", sans-serif;
-  width: 400px;
-  font-size: 25px;
+  font-family: 'Sunflower', sans-serif;
+  width: 30rem;
+  font-size: 1.1rem;
   font-weight: bold;
+  line-height: 2rem;
 }
 
 .IU-main iframe {
@@ -486,22 +446,22 @@ section .INSTAGRAM_profile {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0 0 50px 0;
+  padding : 3rem 0;
 }
 
 /* 유튜브 프로필 컨텐츠 CSS*/
 .YOUTUBE_PROFILE {
   border: 1px solid #fff;
-  width: 100px;
-  height: 100px;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
 }
 
 .YOUTUBE_PROFILE img {
-  width: 100px;
-  height: 100px;
+  width: 8rem;
+  height: 8rem;
 }
 
 .YOUTUBE_BANNER {

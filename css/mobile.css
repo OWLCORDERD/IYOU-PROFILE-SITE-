@@ -13,6 +13,7 @@
     right: 0;
     width: 100%;
     background-color: #fff;
+    padding : 2rem;
   }
 
   aside {
@@ -25,14 +26,6 @@
     width: 100%;
     height: 80vh;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-  }
-
-  .banner .slider {
-    display: none;
-  }
-
-  .main_slider {
-    display: none;
   }
 
   .mobile {
@@ -133,119 +126,55 @@
 
   /* MOBILE section banner css*/
 
-  .part1 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .part1 img {
-    width: 80%;
-  }
-
   .profile_title h1 {
-    font-size: 18px;
+    font-size: 1rem;
   }
 
   .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 12rem;
+    height: 12rem;
     overflow: hidden;
     border: 5px solid #fff;
     position: relative;
-    border-radius: 50%;
+    border-radius: 30%;
   }
 
   .profile-image img {
-    width: 100px;
-    height: 100px;
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .introduce .main_title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
   }
 
   .name {
     font-weight: bold;
-    font-size: 27px;
+    font-size: 2rem;
     letter-spacing: 0;
   }
 
   .sub-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .introduce_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding : 0;
   }
 
   .introduce_2 img {
+    margin : 3rem 0;
     margin-top: 20px;
-    width: 40px;
+    width: 8rem;
   }
 
   .introduce_2 p {
-    font-size: 1rem;
-  }
-
-  .PC_INSTAGRAM {
-    display: none;
-  }
-
-  .Mobile_INSTAGRAM {
-    display: block;
-  }
-
-  section .INSTAGRAM_profile {
-    padding: 0px 0 20px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .profile-image {
-    width: 100px;
-    height: 100px;
-  }
-
-  .INSTAGRAM_profile .profile-image {
-    margin: 20px;
-  }
-
-  .profile-information h1 {
-    font-size: 25px;
-    padding: 0px 0px 30px 0px;
-    font-weight: bold;
-  }
-
-  .sub-information {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .sub-information p {
-    display: flex;
-    font-size: 25px;
-  }
-
-  .sub-information button {
-    width: 70px;
-    height: 30px;
-    background-color: rgb(77, 140, 192);
-    border-style: none;
-    color: #fff;
-    font-size: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
-  .INSTAGRAM_PEED {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
-  }
-
-  .INSTAGRAM_PEED img {
-    width: 150px;
-    margin-left: 5px;
+    font-size: 1.2rem;
+    margin : 0 0 3rem 0 ;
   }
 
   .Charactor-title {
@@ -270,16 +199,16 @@
 
   .YOUTUBE_PROFILE {
     border: 1px solid #fff;
-    width: 90px;
-    height: 90px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
   }
 
   .YOUTUBE_PROFILE img {
-    width: 100px;
-    height: 100px;
+    width: 5rem;
+    height: 5rem;
   }
 
   .YOUTUBE_BANNER {
@@ -289,13 +218,13 @@
   }
 
   .YOUTUBE_BANNER h1 {
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 
   .YOUTUBE_BANNER p {
     float: left;
     left: 0;
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 
   .subscribe {
@@ -318,36 +247,95 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 10px 0 50px 0;
+    padding: 5rem 0 10rem 0;
   }
-
-  .IU-main img {
-    width: 150px;
-    margin-top: 20px;
-  }
-
+  
   .IU-main .medal {
-    width: 50px;
+    width: 4rem;
+    margin : 1rem;
+  }
+  
+  .IU-main h1 {
+    font-family: 'Sunflower', sans-serif;
+    width: 18rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .IU-main p {
+    width : 18rem;
+    font-family: 'Sunflower', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 2rem;
+  }
+  
+  .IU-main iframe {
+    width: 22rem;
+    padding : 1rem 0;
   }
 
-  .IU-main h1 {
-    margin-top: 20px;
+  .PC_INSTAGRAM {
+    display: none;
+  }
+
+  .Mobile_INSTAGRAM {
+    display: block;
+  }
+
+  section .INSTAGRAM_profile {
+    padding: 0px 0 20px 0;
     width: 100%;
-    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .INSTAGRAM_profile .profile-image {
+    margin: 20px;
+  }
+
+  .profile-information h1 {
+    font-size: 2rem;
+    padding: 0px 0px 30px 0px;
     font-weight: bold;
   }
 
-  .IU-main p {
-    margin-top: 20px;
-    width: 100%;
-    font-size: 1.5rem;
-    font-weight: lighter;
+  .sub-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
-  .IU-main iframe {
-    margin-top: 20px;
-    width: 350px;
-    height: 250px;
+  .sub-information p {
+    display: flex;
+    font-size: 1rem;
+  }
+
+  .sub-information button {
+    width: 70px;
+    height: 30px;
+    background-color: rgb(77, 140, 192);
+    border-style: none;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .INSTAGRAM_PEED {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+
+  .INSTAGRAM_PEED img {
+    width: 150px;
+    margin-left: 5px;
   }
 
   footer {
