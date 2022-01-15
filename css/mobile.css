@@ -4,8 +4,8 @@
     display: block;
   }
 
-  .main_slider {
-    display: none;
+  .banner {
+    display: block;
   }
 
   section {
@@ -13,7 +13,7 @@
     right: 0;
     width: 100%;
     background-color: #fff;
-    padding : 2rem;
+    padding: 2rem;
   }
 
   aside {
@@ -144,8 +144,8 @@
     height: 12rem;
   }
 
-  .introduce .main_title{
-    font-family: 'Raleway', sans-serif;
+  .introduce .main_title {
+    font-family: "Raleway", sans-serif;
     font-size: 2rem;
   }
 
@@ -159,22 +159,22 @@
     font-size: 1.2rem;
   }
 
-  .introduce_2{
+  .introduce_2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding : 0;
+    padding: 0;
   }
 
   .introduce_2 img {
-    margin : 3rem 0;
+    margin: 3rem 0;
     margin-top: 20px;
     width: 8rem;
   }
 
   .introduce_2 p {
     font-size: 1.2rem;
-    margin : 0 0 3rem 0 ;
+    margin: 0 0 3rem 0;
   }
 
   .Charactor-title {
@@ -249,31 +249,31 @@
     justify-content: space-evenly;
     padding: 5rem 0 10rem 0;
   }
-  
+
   .IU-main .medal {
     width: 4rem;
-    margin : 1rem;
+    margin: 1rem;
   }
-  
+
   .IU-main h1 {
-    font-family: 'Sunflower', sans-serif;
+    font-family: "Sunflower", sans-serif;
     width: 18rem;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
   }
-  
+
   .IU-main p {
-    width : 18rem;
-    font-family: 'Sunflower', sans-serif;
+    width: 18rem;
+    font-family: "Sunflower", sans-serif;
     font-size: 0.8rem;
     font-weight: bold;
     line-height: 2rem;
   }
-  
+
   .IU-main iframe {
     width: 22rem;
-    padding : 1rem 0;
+    padding: 1rem 0;
   }
 
   .PC_INSTAGRAM {
