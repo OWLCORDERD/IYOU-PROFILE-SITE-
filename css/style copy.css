@@ -1,0 +1,655 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dongle:wght@400;700&family=Gothic+A1:wght@100&family=Hi+Melody&family=Moon+Dance&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(219, 152, 152);
+  border-radius: 5rem;
+}
+
+/* body background*/
+
+body {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url("/image/section\ 배경/라일락2.jpg");
+}
+
+/* section 영역 */
+section {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  right: 0;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 5rem;
+}
+
+/* PC banner css */
+
+/* banner 전체적인 css */
+.banner {
+  position: relative;
+  float: right;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: none;
+}
+
+.main_slider {
+  position: relative;
+  width: 85%;
+  height: 70vh;
+  background-color: #fff;
+}
+
+.main_slider .slides {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.main_slider .slides .slide {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(0% at 50% 50%);
+}
+
+.main_slider .slides .slide.active {
+  clip-path: circle(70.7% at 50% 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+.main_slider .slides .btn.active {
+  background-color: #000;
+}
+
+.main_slider .slides .slide img {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.navigation {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  margin-bottom: 40px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.navigation .btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/*mobile banner css */
+
+.mobile {
+  display: none;
+}
+
+/*PC aside navbar css*/
+aside {
+  position: sticky;
+  float: left;
+  left: 0;
+  top: 0;
+  width: 20%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  font-family: "Moon Dance", cursive;
+  font-weight: bold;
+}
+
+.aside-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  float: left;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.aside-logo img {
+  width: 200px;
+}
+
+aside nav {
+  position: relative;
+  z-index: 100;
+  left: 0;
+}
+
+aside nav li {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+aside nav li a {
+  width: 100%;
+  padding: 20px 40px;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+aside nav li a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+aside nav ul li.fix a {
+  color: #fff;
+  background-color: #000;
+}
+
+/*mobile nav button css*/
+.hamburger {
+  position: absolute;
+  display: none;
+  top: 9%;
+  float: right;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+  z-index: 200;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 35px;
+  height: 6px;
+  display: block;
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+/* 프로필 타이틀 제목 css*/
+
+.profile_title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 0 30px 0;
+  font-family: "Moon Dance", cursive;
+  font-weight: bold;
+}
+
+.profile_title h1 {
+  border: 3px solid gray;
+  padding: 10px 40px 10px 40px;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* 프로필 부모 영역 flexbox */
+.profile {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Hi Melody", cursive;
+  margin-top: 7rem;
+}
+
+/*프로필 img css */
+.profile-image {
+  width: 18rem;
+  height: 18rem;
+  overflow: hidden;
+  border: 5px solid #fff;
+  position: relative;
+  border-radius: 50%;
+}
+
+.profile-image img {
+  width: 18rem;
+}
+
+.profile-image_INSTA {
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
+  border: 5px solid #fff;
+  position: relative;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+.profile-image_INSTA img {
+  width: 8rem;
+}
+
+/* 프로필 소개 부모 영역 css */
+.introduce {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 프로필 소개 부모에 속해있는 자식요소 영역 css */
+.introduce .main_title {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  padding: 3rem 0;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  color: rgb(146, 146, 146);
+  padding: 1.5rem 0 3rem 0;
+}
+
+.sub-title {
+  font-family: "Sunflower", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1.2rem 0;
+}
+
+.introduce_2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 0;
+  font-family: "Sunflower", sans-serif;
+}
+
+.introduce_2 img {
+  width: 5rem;
+}
+
+.melon,
+.movie,
+.sing {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 인스타 프로필 flexbox css */
+section .INSTAGRAM_profile {
+  padding: 50px 0 50px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.INSTAGRAM_profile .profile-image {
+  margin-right: 50px;
+}
+
+.profile-information h1 {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 30px;
+  padding: 0px 30px 30px 0px;
+}
+
+.sub-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sub-information p {
+  font-family: "Sunflower", sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.sub-information button {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: bold;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(77, 140, 192);
+  border-style: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* mobile 화면 인스타 피드 요소 hidden */
+.Mobile_INSTAGRAM {
+  display: none;
+}
+
+/* PC 화면 인스타 피드 flexbox css */
+.INSTAGRAM_PEED {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.INSTAGRAM_PEED img {
+  width: 150px;
+  cursor: pointer;
+}
+
+/* 캐릭터 파트 부모 css */
+
+.Charactor {
+  position: relative;
+  text-align: center;
+  top: 10%;
+}
+
+/* 유튜브 프로필 부모 CSS */
+.YOUTUBE {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+/* 유튜브 프로필 컨텐츠 CSS*/
+.YOUTUBE_PROFILE {
+  border: 1px solid #fff;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.YOUTUBE_PROFILE img {
+  width: 8rem;
+  height: 8rem;
+}
+
+.YOUTUBE_BANNER {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.YOUTUBE_BANNER h1 {
+  font-size: 45px;
+  font-family: "Dongle", sans-serif;
+}
+
+.YOUTUBE_BANNER p {
+  float: left;
+  left: 0;
+  font-size: 30px;
+  font-family: "Dongle", sans-serif;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe button {
+  width: 80px;
+  height: 40px;
+  color: #fff;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: bold;
+  border-style: none;
+  background-color: rgb(230, 31, 31);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.YOUTUBE_SUB {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  border-bottom: 2px solid #aaa;
+  margin: 0 0 10rem 0;
+  background-color: rgba(255, 255, 255, 0.829);
+  border: 2px solid #aaa;
+  border-radius: 2rem;
+}
+
+.YOUTUBE_SUB .YOUTUBE_VIDEO iframe {
+  padding: 2rem 0;
+  width: 80%;
+  height: 600px;
+}
+
+.YOUTUBE_SUB .YOUTUBE_HASHTAG {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2rem 0 0 2rem;
+}
+
+.YOUTUBE_HASHTAG p {
+  font-family: "Sunflower", sans-serif;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: blue;
+}
+
+.YOUTUBE_SUB .YOUTUBE_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.YOUTUBE_SUB .YOUTUBE_title h1 {
+  font-family: "Sunflower", sans-serif;
+  float: left;
+  left: 0;
+  padding: 2rem;
+}
+
+.YOUTUBE_content1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.YOUTUBE_content1 p {
+  font-family: "Sunflower", sans-serif;
+  padding: 0 2rem;
+  font-weight: bold;
+}
+
+.YOUTUBE_content2 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.YOUTUBE_content2 p {
+  font-family: "Sunflower", sans-serif;
+  padding: 0 2rem;
+  font-weight: bold;
+}
+
+footer {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.95;
+  border-top: 2px solid #c7bfbfab;
+  font-family: "Dongle", sans-serif;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+}
+
+footer .footer-logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+footer .footer-logo img {
+  width: 150px;
+}
+
+.sub-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  border-bottom: 2px solid gray;
+}
+
+.footer-contents:nth-child(1) {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid #c7bfbfab;
+}
+
+.footer-contents:nth-child(2) {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid #c7bfbfab;
+}
+
+.footer-contents:nth-child(3) {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-contents h1 {
+  padding: 20px;
+  font-size: 35px;
+}
+
+.footer-container ul li {
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-container ul li a {
+  color: #000;
+  font-size: 25px;
+}
+
+.footer-container ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+}
+
+.footer-information h1 {
+  padding: 10px;
+  color: #fff;
+  font-size: 23px;
+  font-weight: lighter;
+}
+
+.footer-information .icon {
+  width: 20%;
+  padding: 0 0 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  color: #fff;
+  font-weight: 100;
+  font-size: 30px;
+}
