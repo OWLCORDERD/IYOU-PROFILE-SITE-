@@ -9,14 +9,13 @@
   <link rel="shortcut icon" href="image/프로필 사진/Profile.jpg" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/mobile.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <script src="https://kit.fontawesome.com/e00c70ce99.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <script defer type="text/javascript" src="Onclick.js"></script>
   <script defer src="slider.js"></script>
 </head>
-
-
 <body>
   <aside>
     <nav>
@@ -33,26 +32,6 @@
   </aside>
 
   <div class="banner">
-
-    <div class="main_slider">
-      <div class="slides">
-
-        <div class="slide active">
-          <img src="image/banner 배경/PART1.gif" alt="">
-        </div>
-        <div class="slide">
-          <img src="image/banner 배경/PART2.gif" alt="">
-        </div>
-        <div class="slide">
-          <img src="image/banner 배경/PART3.gif" alt="">
-        </div>
-        <div class = "navigation">
-          <div class="btn active"></div>
-          <div class="btn"></div>
-          <div class="btn"></div>
-        </div>
-      </div>
-    </div>
 
     <div class="overlay"></div>
 
@@ -91,20 +70,28 @@
   <section>
 
     <div class="profile">
-      <div class="profile-image">
-        <img src="image/프로필 사진/Profile.jpg" />
-      </div>
       <div class="introduce">
-        <p class="main_title">PART 1. PROFILE</p>
-        <p class="name">ABOUT IU INFORMATION</p>
-        <p class="sub-title">본명 : 이지은</p>
-        <p class="sub-title">나이 : 28</p>
-        <p class="sub-title">출생 : 서울특별시 성동구 송정동</p>
-        <p class="sub-title">2008년 9월 18일 데뷔</p>
+        <div class="profile-image" data-aos="zoom-in" data-aos-delay="500">
+          <img src="image/프로필 사진/Profile.jpg"/>
+        </div>
+        <div class = "introduce_content">
+          <div class = "introduce_HASHTAG">
+          <p class="name" data-aos="fade-in" data-aos-delay="300">#INSTAGRAM</p>
+          <p class="name" data-aos="fade-in" data-aos-delay="300">#YOUTUBE</p>
+          <p class="name" data-aos="fade-in" data-aos-delay="300">#CHARACTER</p>
+        </div>
+        <p class="main_title" data-aos="fade-in" data-aos-delay="400" >PART 1. PROFILE</p>
       </div>
-    </div>
+      </div>
 
-    <div class="introduce_2">
+      <div class=  "sub-title" data-aos="fade-in" data-aos-delay="600" >
+        <p>본명 : 이지은</p>
+        <p>나이 : 28</p>
+        <p>출생 : 서울특별시 성동구 송정동</p>
+        <p>2008년 9월 18일 데뷔</p>
+        </div>
+
+    <div class="introduce_2" data-aos="fade-down" data-aos-delay="700">
 
       <div class="melon">
         <img src="image/introduce img/멜론 아이콘.png">
@@ -122,15 +109,80 @@
       </div>
     </div>
 
+  </div>
 
-    <div class="profile_title">
-      <h1>CHARACTER</h1>
+  <div class="INSTAGRAM_profile">
+    <div class = "INSTAGRAM_title">
+      <p>#INSTAGRAM</p>
+      <span></span>
     </div>
+    <div class="profile-image_INSTA">
+      <img src="image/프로필 사진/인스타 프로필.png">
+    </div>
+    <div class="profile-information">
+      <div class="sub-information">
+        <h1>dlwlrma</h1>
+        <a href="https://www.instagram.com/dlwlrma/" target="_blank">
+          <button>팔로우</button>
+        </a>
+      </div>
+      <div class="sub-information">
+        <p>게시물 615</p>
+        <p>팔로워 24.3백만</p>
+        <p>팔로우 112</p>
+      </div>
+    </div>
+
+  <div class="PC_INSTAGRAM">
+    <div class="INSTAGRAM_PEED">
+      <img src="image/INSTAGRAM/인스타 피드_1.jpg">
+      <img src="image/INSTAGRAM/인스타 피드_2.JPG">
+      <img src="image/INSTAGRAM/인스타 피드_3.JPG">
+      <img src="image/INSTAGRAM/인스타 피드_4.JPG">
+      <img src="image/INSTAGRAM/인스타 피드_5.JPG">
+    </div>
+
+    <div class="INSTAGRAM_PEED">
+      <img src="image/INSTAGRAM/인스타 피드_6.JPG">
+      <img src="image/INSTAGRAM/인스타 피드_7.JPG">
+      <img src="image/INSTAGRAM/인스타 피드_8.JPG">
+      <img src="image/INSTAGRAM/인스타 피드_9.JPG">
+      <img src="image/INSTAGRAM/인스타 피드_10.JPG">
+    </div>
+
+  </div>
+
+  <div class="Mobile_INSTAGRAM">
+    <div class="INSTAGRAM_PEED">
+      <img src="image/INSTAGRAM/인스타 피드_1.jpg">
+      <img src="image/INSTAGRAM/인스타 피드_2.JPG">
+    </div>
+    <div class="INSTAGRAM_PEED">
+      <img src="image/INSTAGRAM/인스타 피드_3.JPG">
+      <img src="image/INSTAGRAM/인스타 피드_4.JPG">
+    </div>
+
+    <div class="INSTAGRAM_PEED">
+      <img src="image/INSTAGRAM/인스타 피드_5.JPG">
+      <img src="image/INSTAGRAM/인스타 피드_6.JPG">
+    </div>
+    <div class="INSTAGRAM_PEED">
+      <img src="image/INSTAGRAM/인스타 피드_7.JPG">
+      <img src="image/INSTAGRAM/인스타 피드_8.JPG">
+    </div>
+
+  </div>
+</div>
 
     <div class="Charactor">
 
       <div class="YOUTUBE">
-        <div class="YOUTUBE_PROFILE">
+        <div class = "YOUTUBE_main_title">
+          <p>#YOUTUBE</p>
+          <span></span>
+        </div>
+        <div class = "YOUTUBE_PROFILE">
+        <div class="YOUTUBE_PROFILE_img">
           <img src="image/프로필 사진/유튜브 프로필.jpg">
         </div>
         <div class="YOUTUBE_BANNER">
@@ -141,107 +193,191 @@
           <button onclick="location.href='https://www.youtube.com/c/dlwlrma'">구독</button>
         </div>
       </div>
+      </div>
 
-      <div class="IU-main">
-        <div class="IU-name">
-          <img src="image/introduce img/금메달.png" class="medal">
+      <div class = "YOUTUBE_SUB">
+
+        <div class = "YOUTUBE_VIDEO">
+
+        <div class = "YOUTUBE_VIDEO_main">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Xswtv6Lq41w?control=0;" title="YouTube video player"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class = "YOUTUBE_VIDEO_SUB">
+        </div>
+
+        </div>
+
+        <div class = "YOUTUBE_HASHTAG">
+          <p>#가수 아이유</p>
+          <p>#인스타 활동명</p>
+          <p>#유튜브 활동명</p>
+          <p>#이지금</p>
+        </div>
+
+        <div class = "YOUTUBE_title">
+          <h1>자신을 바꾼 아이유, 이지금</h1>
+          <img src = "image/introduce img/금메달.png">
+          </div>
+
+        <div class = "YOUTUBE_content">
+
+        <div class = "YOUTUBE_content1">
+          <p>조회수 없음</p>
+          <p>2022. 01. 16.</p>
+        </div>
+
+        <div class = "YOUTUBE_content2">
+          <i class="far fa-thumbs-up"></i>
+          <p>좋아요</p>
+          <i class="far fa-thumbs-down"></i>
+          <p>싫어요</p>
+        </div>
+
+        </div>
+
+        <div class = "YOUTUBE_SUB_PROFILE">
+
+          <div class = "SUB_PROFILE_IMG">
+          <img src = "image/Character/아이유.gif">
+          </div>
+
+          <div class = "SUB_PROFILE_content">
+          <i class="fas fa-thumbtack"></i>
+          <p class = "pick">이지은님이 고정함</p>
           <h1>이지금</h1>
-          <p>은보다 금이 되고싶어 별명을 이지금이라고 지었으며,<br> 유튜브 인스타그램 등등 활동명으로 사용하고 있다. <br>
+          <p>은보다 금이 되고싶어 별명을 이지금이라고 지었으며,유튜브 인스타그램 등등 활동명으로 사용하고 있다.<br>
             그러다 2017년 "이지금" 노래를 발매하였다. </p>
+          </div>
+
         </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Xswtv6Lq41w" title="YouTube video player"
+
+        </div>
+
+        <div class = "YOUTUBE_SUB">
+
+          <div class = "YOUTUBE_VIDEO">
+  
+          <div class = "YOUTUBE_VIDEO_main">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7g72PqFaBeg" title="YouTube video player"
           frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+          </div>
+  
+          <div class = "YOUTUBE_VIDEO_SUB">
+          </div>
+  
+          </div>
+  
+          <div class = "YOUTUBE_HASHTAG">
+            <p>#아이유</p>
+            <p>#본캐</p>
+            <p>#이지은</p>
+          </div>
+  
+          <div class = "YOUTUBE_title">
+            <h1>가수 아이유를 만든 이지은이 누구일까?</h1>
+            <img src = "image/introduce img/은메달.png">
+            </div>
+  
+          <div class = "YOUTUBE_content">
+  
+          <div class = "YOUTUBE_content1">
+            <p>조회수 없음</p>
+            <p>2022. 01. 16.</p>
+          </div>
+  
+          <div class = "YOUTUBE_content2">
+            <i class="far fa-thumbs-up"></i>
+            <p>좋아요</p>
+            <i class="far fa-thumbs-down"></i>
+            <p>싫어요</p>
+          </div>
+  
+          </div>
+  
+          <div class = "YOUTUBE_SUB_PROFILE">
+  
+            <div class = "SUB_PROFILE_IMG">
+            <img src = "image/임시 사진/인스타지은.gif">
+            </div>
+  
+            <div class = "SUB_PROFILE_content">
+            <i class="fas fa-thumbtack"></i>
+            <p class = "pick">이지은님이 고정함</p>
+            <h1>이지은</h1>
+            <p>가수 아이유를 탄생시킨 본캐 이지은<br>
+              영상을 통해 이지은의 연대기를 확인해보자. </p>
+            </div>
+  
+          </div>
+          
+          </div>
 
-      <div class="IU-main">
-        <div class="IU-name">
-          <img src="image/introduce img/은메달.png" class="medal">
-          <h1>이지은</h1>
-          <p>가수 아이유를 탄생시킨 본캐 이지은<br>
-            영상을 통해 이지은의 연대기를 확인해보자. </p>
-        </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7g72PqFaBeg" title="YouTube video player"
+          <div class = "YOUTUBE_SUB">
+
+            <div class = "YOUTUBE_VIDEO">
+    
+            <div class = "YOUTUBE_VIDEO_main">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/QhQZ8xl268c" title="YouTube video player"
           frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    
+            <div class = "YOUTUBE_VIDEO_SUB">
+            </div>
+    
+            </div>
+    
+            <div class = "YOUTUBE_HASHTAG">
+              <p>#아이유</p>
+              <p>#EDAM 사원</p>
+              <p>#아이유 닮음 주의보</p>
+              <p>#이지동</p>
+            </div>
+    
+            <div class = "YOUTUBE_title">
+              <h1>EDAM 신입사원 앨범 스포 담당, 이지동</h1>
+              <img src = "image/introduce img/동메달.png">
+              </div>
+    
+            <div class = "YOUTUBE_content">
+    
+            <div class = "YOUTUBE_content1">
+              <p>조회수 없음</p>
+              <p>2022. 01. 16.</p>
+            </div>
+    
+            <div class = "YOUTUBE_content2">
+              <i class="far fa-thumbs-up"></i>
+              <p>좋아요</p>
+              <i class="far fa-thumbs-down"></i>
+              <p>싫어요</p>
+            </div>
+    
+            </div>
+    
+            <div class = "YOUTUBE_SUB_PROFILE">
+    
+              <div class = "SUB_PROFILE_IMG">
+              <img src = "image/Character/이지동.gif">
+              </div>
+    
+              <div class = "SUB_PROFILE_content">
+              <i class="fas fa-thumbtack"></i>
+              <p class = "pick">이지은님이 고정함</p>
+              <h1>이지동</h1>
+              <p>20년 9월 입사한 EDAM 인턴 사원 이지동<br> 아이유 앨범 스포 및 리뷰 회의를 담당한다. <br>
+                아이유와 닮았지만 눈밑의 점으로 구분이 가능하다.</p>
+              </div>
+    
+            </div>
+            
+            </div>
+            
       </div>
-
-      <div class="IU-main">
-        <div class="IU-name">
-          <img src="image/introduce img/동메달.png" class="medal">
-          <h1>이지동</h1>
-          <p>20년 9월 입사한 EDAM 인턴 사원 이지동<br> 아이유 앨범 스포 및 리뷰 회의를 담당한다. <br>
-            아이유와 닮았지만 눈밑의 점으로 구분이 가능하다.</p>
-        </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/QhQZ8xl268c" title="YouTube video player"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-
-
-    <div class="profile_title">
-      <h1>INSTAGRAM</h1>
-    </div>
-
-    <div class="INSTAGRAM_profile">
-      <div class="profile-image_INSTA">
-        <img src="image/프로필 사진/인스타 프로필.png">
-      </div>
-      <div class="profile-information">
-        <div class="sub-information">
-          <h1>dlwlrma</h1>
-          <a href="https://www.instagram.com/dlwlrma/" target="_blank">
-            <button>팔로우</button>
-          </a>
-        </div>
-        <div class="sub-information">
-          <p>게시물 615</p>
-          <p>팔로워 24.3백만</p>
-          <p>팔로우 112</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="PC_INSTAGRAM">
-      <div class="INSTAGRAM_PEED">
-        <img src="image/INSTAGRAM/인스타 피드_1.jpg">
-        <img src="image/INSTAGRAM/인스타 피드_2.JPG">
-        <img src="image/INSTAGRAM/인스타 피드_3.JPG">
-        <img src="image/INSTAGRAM/인스타 피드_4.JPG">
-        <img src="image/INSTAGRAM/인스타 피드_5.JPG">
-      </div>
-
-      <div class="INSTAGRAM_PEED">
-        <img src="image/INSTAGRAM/인스타 피드_6.JPG">
-        <img src="image/INSTAGRAM/인스타 피드_7.JPG">
-        <img src="image/INSTAGRAM/인스타 피드_8.JPG">
-        <img src="image/INSTAGRAM/인스타 피드_9.JPG">
-        <img src="image/INSTAGRAM/인스타 피드_10.JPG">
-      </div>
-
-    </div>
-
-    <div class="Mobile_INSTAGRAM">
-      <div class="INSTAGRAM_PEED">
-        <img src="image/INSTAGRAM/인스타 피드_1.jpg">
-        <img src="image/INSTAGRAM/인스타 피드_2.JPG">
-      </div>
-      <div class="INSTAGRAM_PEED">
-        <img src="image/INSTAGRAM/인스타 피드_3.JPG">
-        <img src="image/INSTAGRAM/인스타 피드_4.JPG">
-      </div>
-
-      <div class="INSTAGRAM_PEED">
-        <img src="image/INSTAGRAM/인스타 피드_5.JPG">
-        <img src="image/INSTAGRAM/인스타 피드_6.JPG">
-      </div>
-      <div class="INSTAGRAM_PEED">
-        <img src="image/INSTAGRAM/인스타 피드_7.JPG">
-        <img src="image/INSTAGRAM/인스타 피드_8.JPG">
-      </div>
-
-    </div>
 
   </section>
 
@@ -288,5 +424,12 @@
   </footer>
 
 </body>
+
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+  });
+</script>
 
 </html>
