@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dongle:wght@400;700&family=Gothic+A1:wght@100&family=Hi+Melody&family=Moon+Dance&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dongle:wght@400;700&family=Hi+Melody&family=Moon+Dance&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap");
 
@@ -176,9 +176,9 @@ aside nav ul li.fix a {
 }
 
 /*프로필 img css */
-.profile-image {
-  width: 18rem;
-  height: 18rem;
+.Character-image {
+  width: 13rem;
+  height: 13rem;
   overflow: hidden;
   border: 5px solid #fff;
   position: relative;
@@ -186,8 +186,8 @@ aside nav ul li.fix a {
   margin: 2rem;
 }
 
-.profile-image img {
-  width: 18rem;
+.Character-image img {
+  width: 13rem;
 }
 
 .profile-image_INSTA {
@@ -213,18 +213,27 @@ aside nav ul li.fix a {
   justify-content: space-around;
 }
 
-/* 프로필 제목 css */
-
-.introduce_content {
+.introduce .introduce_content{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.introduce_HASHTAG {
+
+.introduce .introduce_content .sub_title{
+  width : 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
+
+.introduce .introduce_content .sub_title p{
+  font-family: "Sunflower", sans-serif;
+  font-weight: bold;
+  color : rgb(110, 110, 110);
+  font-size: 20px;
+}
+
 
 /* 프로필 소개 부모에 속해있는 자식요소 영역 css */
 .introduce .main_title {
@@ -243,18 +252,6 @@ aside nav ul li.fix a {
   padding: 0 1rem;
 }
 
-.sub-title {
-  font-family: "Sunflower", sans-serif;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 1.2rem 0;
-  text-align: center;
-}
-
-.sub-title p {
-  padding: 1.2rem;
-}
-
 /*소개 영역 flexbox 3가지 css */
 .introduce_2 {
   position: relative;
@@ -267,16 +264,32 @@ aside nav ul li.fix a {
   font-family: "Sunflower", sans-serif;
 }
 
-.introduce_2 img {
-  width: 5rem;
+.introduce_img .img {
+  width: 8rem;
+  margin : 2rem;
 }
 
-.melon,
-.movie,
-.sing {
+.profile_img{
+  position: relative;
+  width : 8rem;
+  height : 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border : 5px solid #aaa;
+  margin : 2rem;
+}
+
+.profile_img img{
+  position: absolute;
+  width : 8rem;
+}
+
+.introduce_img p,
+.profile_img p{
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+  color : #aaa;
 }
 
 /* 인스타 프로필 flexbox css */
@@ -314,7 +327,7 @@ section .INSTAGRAM_profile {
 }
 
 .profile-information h1 {
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Sunflower", sans-serif;
   font-size: 30px;
   padding: 0px 30px 30px 0px;
 }
@@ -333,7 +346,7 @@ section .INSTAGRAM_profile {
 }
 
 .sub-information button {
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Sunflower", sans-serif;
   font-weight: bold;
   width: 100px;
   height: 40px;
@@ -345,25 +358,90 @@ section .INSTAGRAM_profile {
   cursor: pointer;
 }
 
-/* mobile 화면 인스타 피드 요소 hidden */
-.Mobile_INSTAGRAM {
-  display: none;
+/* INSTAGRAM PEED GRID BOX */
+.PEED_container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  margin: 3rem 0;
 }
 
-/* PC 화면 인스타 피드 flexbox css */
-.INSTAGRAM_PEED {
+.PEED_item{
+  width : 22rem;
+  height : 25rem;
+  border : 2px solid #aaa;
+  padding : 0.8rem;
+}
+
+.PEED_item .PEED_profile{
+  width : 100%;
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.PEED_item .PEED_profile .PEED_profile_img{
+  position: relative;
+  width : 3rem;
+  height : 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.PEED_item .PEED_profile .PEED_profile_img img{
+  position: absolute;
+  top : 0;
+  left: 0;
+  width : 3rem;
+  height : 3rem;
+}
+
+.PEED_item .PEED_profile p{
+  font-family: "Sunflower", sans-serif;
+  font-weight: bold;
+  padding : 1em;
+}
+
+.PEED_item .PEED_info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.PEED_item .PEED_info img{
+  width : 15rem;
+  margin : 1rem;
+}
+
+.PEED_item .PEED_info .PEED_info2{
+  width : 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.PEED_item .PEED_info .PEED_info2 p{
+  font-weight: bold;
+  font-family: "Sunflower", sans-serif;
+  font-size: 1em;
+}
+
+.PEED_item .PEED_info .PEED_info2 .PEED_like{
+  display: flex;
+  width : 60%;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 20px;
 }
 
-.INSTAGRAM_PEED img {
-  width: 150px;
-  cursor: pointer;
+.PEED_item .PEED_info .PEED_info2 .PEED_like img{
+  width : 1rem;
+  height : 1rem;
 }
+
+
 
 /* 캐릭터 파트 부모 css */
 
@@ -457,7 +535,7 @@ section .INSTAGRAM_profile {
   width: 80px;
   height: 40px;
   color: #fff;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Sunflower", sans-serif;
   font-weight: bold;
   border-style: none;
   background-color: rgb(230, 31, 31);
