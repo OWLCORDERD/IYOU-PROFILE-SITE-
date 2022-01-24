@@ -276,13 +276,6 @@
     padding: 1rem 0;
   }
 
-  .PC_INSTAGRAM {
-    display: none;
-  }
-
-  .Mobile_INSTAGRAM {
-    display: block;
-  }
 
   section .INSTAGRAM_profile {
     padding: 0px 0 20px 0;
@@ -325,19 +318,9 @@
     cursor: pointer;
   }
 
-  .INSTAGRAM_PEED {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
+  .PEED_container{
+    grid-template-columns: 1fr;
   }
-
-  .INSTAGRAM_PEED img {
-    width: 150px;
-    margin-left: 5px;
-  }
-
   footer {
     position: absolute;
     z-index: 10;
