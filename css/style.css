@@ -585,7 +585,7 @@ section .INSTAGRAM_profile {
 
 .Channer_container .Channer_item{
   width : 20rem;
-  height : 17rem;
+  height : 20rem;
   border : 2px solid rgba(170, 170, 170, 0.5);
 }
 
@@ -603,9 +603,10 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   object-fit: cover;
   width : 100%;
   height : 100%;
+  transition: .2s linear;
 }
 
-.Channer_container .Channer_item:hover{
+.Channer_container .Channer_item:hover .img img{
   transform: scale(1.1);
 }
 
@@ -614,6 +615,22 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   font-size: 1.5em;
   color : rgb(100, 95, 95);
   padding : 1.5rem 2rem;
+}
+
+.Channer_container .Channer_item .Channer_button{
+  background-color : rgb(100, 95, 95);
+  color : #fff;
+  font-family: "Sunflower", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width : 8rem;
+  padding : 0.5rem 1rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 /*Character 소개 영역 유튜브 창 css*/
