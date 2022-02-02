@@ -265,7 +265,7 @@ aside {
   top: 0;
   width: 20%;
   height: 100vh;
-  background-color: rgb(255, 153, 153);
+  background-color: rgb(180, 180, 180);
   font-family: "Sunflower", sans-serif;
   font-weight: bold;
 }
@@ -276,14 +276,60 @@ aside {
   align-items: center;
   justify-content: center;
   width: 100%;
+  height : 20rem;
+  margin : 7rem 0 4rem 0;
   float: left;
   left: 0;
   top: 0;
-  z-index: 10;
 }
 
-.aside-logo img {
-  width: 200px;
+.aside-logo .music-container{
+    width : 85%;
+    height : 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding : 1rem;
+    z-index: 10;
+}
+
+.aside-logo .music-container .music-container-title{
+    width : 100%;
+    height : auto;
+    margin : auto 0;
+}
+
+.aside-logo .music-container .music-img{
+    width : 8rem;
+    height : 8rem;
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.5);
+    position: relative;
+    padding : 1rem;
+}
+
+.aside-logo .music-container .music-img img{
+    position: absolute;
+    top : 0;
+    left : 0;
+    width : 8rem;
+    height : 8rem;
+}
+
+.aside-logo .music-container .music-img .CD{
+    position: absolute;
+    margin-left: 40%;
+    z-index: -1;
+}
+
+.aside-logo .music-container .music{
+    margin : 1.5rem 0 0 0;
+}
+
+.aside-logo .music-container .music audio::-webkit-media-controls-enclosure{
+    background: none;
 }
 
 aside nav {
@@ -347,10 +393,12 @@ aside nav ul li.fix a {
   position: relative;
   width : 100%;
   height : auto;
-  background-image: url("/image/임시\ 사진/아이유 003.jpg");
+  background-image: url("/image/flower.jpg");
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color : #000;
   padding : 7rem;
 }
 
@@ -364,6 +412,30 @@ aside nav ul li.fix a {
   left : 0;
 }
 
+@keyframes slideText{
+    from{
+        right : -50%;
+        opacity: 0;
+    }
+
+    to{
+       right : 0;
+       opacity: 1;
+    }
+}
+
+@keyframes disappear{
+    from{
+        right : 0;
+        opacity : 1;
+    }
+
+    to{
+        right : -50%;
+        opacity: 0;
+    }
+}
+
 .PART_content{
   display: flex;
   flex-direction: column;
@@ -374,7 +446,9 @@ aside nav ul li.fix a {
   width : 50%;
   position: relative;
   z-index: 10;
+  animation: slideText 1s ease-in;
 }
+
 
 .PART .PART_content .PART_content1{
   display: flex;
@@ -753,168 +827,6 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-
-/*Character 소개 영역 유튜브 창 css*/
-
-.YOUTUBE_SUB {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  border-bottom: 2px solid #aaa;
-  margin: 0 0 10rem 0;
-  padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.829);
-  border: 2px solid #aaa;
-  border-radius: 2rem;
-  box-shadow: 6px 6px 12px 12px rgba(0, 0, 0, 0.5);
-}
-
-.YOUTUBE_VIDEO {
-  display: flex;
-  flex-direction: row;
-}
-
-.YOUTUBE_SUB .YOUTUBE_VIDEO_main iframe {
-  padding: 2rem 2rem 0 2rem;
-  width: 900px;
-  height: 500px;
-  left: 0px;
-  top: 0px;
-}
-
-.YOUTUBE_SUB .YOUTUBE_VIDEO_SUB iframe {
-  padding: 2rem 2rem 0 2rem;
-  width: 300px;
-  height: 250px;
-  left: 0px;
-  top: 0px;
-}
-
-.YOUTUBE_SUB .YOUTUBE_HASHTAG {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 2rem 0 0 2rem;
-}
-
-.YOUTUBE_HASHTAG p {
-  font-family: "Sunflower", sans-serif;
-  padding: 0.5rem 0.2rem;
-  font-weight: bold;
-  color: blue;
-}
-
-.YOUTUBE_SUB .YOUTUBE_content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 2rem;
-  border-bottom: 2px solid #aaa;
-}
-
-.YOUTUBE_SUB .YOUTUBE_title {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 30rem;
-  padding: 0 2rem;
-}
-
-.YOUTUBE_SUB .YOUTUBE_title img {
-  width: 2rem;
-  padding: 0 0 2rem;
-}
-
-.YOUTUBE_SUB .YOUTUBE_title h1 {
-  font-family: "Sunflower", sans-serif;
-  font-size: 1.2rem;
-  float: left;
-  left: 0;
-  padding: 0 0 2rem 0;
-}
-
-.YOUTUBE_content1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  justify-content: space-around;
-}
-
-.YOUTUBE_content1 p {
-  font-family: "Sunflower", sans-serif;
-  padding: 0 2rem;
-  font-weight: bold;
-}
-
-.YOUTUBE_content2 {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.YOUTUBE_content2 p {
-  font-family: "Sunflower", sans-serif;
-  padding: 0 2rem;
-  font-weight: bold;
-}
-
-.YOUTUBE_SUB_PROFILE {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0 2rem;
-}
-
-.SUB_PROFILE_IMG {
-  position: relative;
-  border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
-  margin: 2rem;
-  overflow: hidden;
-}
-
-.SUB_PROFILE_IMG img {
-  width: 5rem;
-  height: 5rem;
-  left: 0;
-  top: 0;
-}
-
-.SUB_PROFILE_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 2rem;
-}
-
-.SUB_PROFILE_content h1 {
-  width: 5rem;
-  height: 2rem;
-  background-color: rgb(105, 103, 103);
-  border-radius: 5rem;
-  font-family: "Sunflower", sans-serif;
-  border: 2px solid #aaa;
-  color: #fff;
-  margin: 1rem 0;
-}
-
-.SUB_PROFILE_content .pick {
-  color: #aaa;
-  font-weight: bold;
-}
-
-.SUB_PROFILE_content p {
-  font-family: "Sunflower", sans-serif;
-  text-align: start;
-  font-size: 1.2rem;
 }
 
 /*pc footer 영역 디자인*/
