@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script
       src="https://kit.fontawesome.com/e00c70ce99.js"
       crossorigin="anonymous"
@@ -25,6 +26,7 @@
     <script defer src="slider.js"></script>
     <script defer src="PEED_onclick.js"></script>
     <script defer src="SliderText.js"></script>
+    <script defer src="active.js"></script>
   </head>
 
   <body>
@@ -120,24 +122,29 @@
     <aside>
       <nav>
         <ul>
+          <div class = "close-btn">
+            <span></span>
+            <span></span>
+          </div>
           <li class="aside-logo">
             <div class="music-container">
               <div class="music-container-title">
                 <h1># NEW SONG PLAYLIST</h1>
               </div>
               <div class="music-img">
-                <img src="image/앨범 모음/조각집.jpg" />
+                <img src="image/앨범 모음/조각집.jpg"/>
                 <img src="image/앨범 모음/Audio_CD.png" class="CD" />
               </div>
               <div class="music">
-                <audio src="조각집 메들리.mp3" autoplay controls></audio>
+                <audio src="조각집 메들리.mp3" controls></audio>
               </div>
             </div>
           </li>
-          <li class="fix"><a href="#">HOME</a></li>
-          <li><a href="music.html">INSTAGRAM</a></li>
-          <li><a href="music.html">YOUTUBE</a></li>
-          <li><a href="#">CHARACTER</a></li>
+          <li class="fix"><i class='bx bxs-news' ></i><a href="#">I'YOU NEWS</a></li>
+          <li><i class='bx bxs-home' ></i><a href="#">HOME</a></li>
+          <li><i class='bx bxl-instagram-alt'></i><a href="music.html">INSTAGRAM</a></li>
+          <li><i class='bx bxl-youtube' ></i><a href="music.html">YOUTUBE</a></li>
+          <li><i class='bx bx-group'></i><a href="#">CHARACTER</a></li>
         </ul>
       </nav>
     </aside>
