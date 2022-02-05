@@ -247,8 +247,9 @@ section {
   z-index: 1;
   right: 0;
   width: 80%;
-  background-color: #fff;
   padding: 5rem;
+  background-color: #fff;
+  transition: 0.1 linear;
 }
 
 /*mobile banner css */
@@ -268,9 +269,10 @@ aside {
   background-color: rgb(0, 0, 0);
   font-family: "Sunflower", sans-serif;
   font-weight: bold;
+  transition: 0.5s ease-out;
 }
 
-aside.active{
+aside.active {
   position: sticky;
   float: left;
   left: 0;
@@ -314,7 +316,7 @@ aside.active{
   margin: auto 0;
 }
 
-aside.active .aside-logo{
+aside.active .aside-logo {
   opacity: 0;
 }
 
@@ -326,7 +328,7 @@ aside.active .aside-logo{
   padding: 1rem;
 }
 
-.aside-logo .music-container .music-img img{
+.aside-logo .music-container .music-img img {
   position: absolute;
   top: 0;
   left: 0;
@@ -364,39 +366,49 @@ aside nav li {
 
 aside nav ul .close-btn {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   float: right;
   right: 0;
   margin: 1rem;
+  cursor: pointer;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor : pointer;
 }
 
-aside nav ul .close-btn span{
-  position: absolute;
+aside nav ul .close-btn span {
   display: block;
-  width : 25px;
-  height : 6px;
+  width: 30px;
+  height: 5px;
+  margin-top: 5px;
   background-color: #fff;
 }
 
-aside nav ul .close-btn span:nth-child(1){
-  transform: rotate(45deg);
-}
-
-aside nav ul .close-btn span:nth-child(2){
-  transform: rotate(-45deg);
-}
-
-
-aside nav li i{
-  margin: 0.6rem;
+aside nav li i {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
   font-size: 40px;
   position: absolute;
-  color : #000;
+  color: #000;
+  padding: 0.5rem;
+}
+
+aside.active nav li i {
+  width: 100%;
+  border-radius: 0.5rem;
+  font-size: 40px;
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem 0;
+}
+
+aside.active nav li i:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 aside nav li a {
@@ -411,6 +423,17 @@ aside nav li a {
   letter-spacing: 0.2rem;
 }
 
+aside.active nav li a {
+  opacity: 0;
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  pointer-events: none;
+}
+
 aside nav li a:hover {
   background-color: #fff;
   color: #000;
@@ -421,6 +444,10 @@ aside nav ul li.fix a {
   background-color: #fff;
   font-family: "Sunflower", sans-serif;
   font-weight: bold;
+}
+
+section.active {
+  width: 95%;
 }
 
 /*mobile nav button css*/
@@ -453,7 +480,7 @@ aside nav ul li.fix a {
   height: auto;
   background-image: url("/image/프로필\ 사진/flower.jpg");
   background-attachment: fixed;
-  background-position: center;
+  background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #000;
