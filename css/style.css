@@ -260,7 +260,7 @@ section {
   z-index: 1;
   right: 0;
   width: 90%;
-  padding: 5rem;
+  padding: 5rem 0;
   background-color: #fff;
   transition: 0.1 linear;
 }
@@ -271,7 +271,7 @@ section.active {
   z-index: 1;
   right: 0;
   width: 80%;
-  padding: 5rem;
+  padding: 5rem 0;
   background-color: #fff;
   transition: 0.1 linear;
 }
@@ -695,7 +695,6 @@ aside nav ul li.fix a {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border: 5px solid #aaa;
   width: 80%;
   height: 27rem;
   border-radius: 2rem;
@@ -703,21 +702,78 @@ aside nav ul li.fix a {
   margin: 2rem 0;
 }
 
-.NEWS-container .NEWS-item .NEWS-img {
-  height: 20rem;
+.NEWS-container .NEWS-icons {
+  width: 100%;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.NEWS-container .NEWS-icons .icons-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 40vh;
+  margin: auto;
+}
+
+.NEWS-container .NEWS-icons .icons-box .icons-img-box {
+  position: relative;
+  width: 230px;
+  height: 250px;
+  box-shadow: 8px 6px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.NEWS-container .NEWS-icons .icons-box .icons-img-box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.NEWS-container .NEWS-icons .icons-box .icons-img-box img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.NEWS-container .NEWS-icons .icons-box .icons-content {
+  width: 100%;
+  height: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.NEWS-container .NEWS-item .NEWS-img img {
-  width: 15rem;
+.NEWS-container .NEWS-icons .icons-box .icons-content h1 {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 1.8em;
+  word-break: keep-all;
+  width: 230px;
+}
+
+.NEWS-container .NEWS-item .NEWS-img {
   height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.NEWS-container .NEWS-item .NEWS-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .NEWS-container .NEWS-item .NEWS-img .img2 {
-  width: 20rem;
-  height: 15rem;
+  width: 233px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .NEWS-container .NEWS-title h1 {
