@@ -11,10 +11,6 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script
       src="https://kit.fontawesome.com/e00c70ce99.js"
@@ -27,6 +23,7 @@
     <script defer src="PEED_onclick.js"></script>
     <script defer src="SliderText.js"></script>
     <script defer src="active.js"></script>
+    <script defer src="scroll.js"></script>
   </head>
 
   <body>
@@ -141,7 +138,7 @@
               </div>
             </div>
           </li>
-          <li class="fix"><i class='bx bxs-news' ></i><a href="#">I'YOU NEWS</a></li>
+          <li class="fix"><i class='bx bxs-news'></i><a href="#NEWS">I'YOU NEWS</a></li>
           <li><i class='bx bxs-home' ></i><a href="#">HOME</a></li>
           <li><i class='bx bxl-instagram-alt'></i><a href="music.html">INSTAGRAM</a></li>
           <li><i class='bx bxl-youtube' ></i><a href="music.html">YOUTUBE</a></li>
@@ -154,22 +151,27 @@
 
       <div class="PART2">
         <div class="PART_content">
-            <h1>IU fabruary NEWS MAGUZINE UPDATE!</h1>
+            <h1>2022 IU NEWS MAGUZINE UPDATE!</h1>
         </div>
       </div>
 
-      <div class = "NEWS-container">
+      <div class = "NEWS-container" id = "NEWS">
         <div class = "NEWS-title">
           <i class='bx bxs-news'></i>
           <h1>BREAKING NEWS</h1>
         </div>
 
-        <div class = "NEWS-icons">
+        <div class = "NEWS-icons animated">
 
           <div class = "icons-box">
 
             <div class = "icons-img-box">
           <img src = "image/유애나5기.jpg">
+            <div class = "overlay">
+              <div class = "box-text">
+                <h1>VIEW MORE</h1>
+              </div>
+          </div>
           </div>
 
           <div class = "icons-content">
@@ -180,6 +182,11 @@
 
             <div class = "icons-img-box">
             <img src = "image/펩시 제로.jpg">
+            <div class = "overlay">
+              <div class = "box-text">
+                <h1>VIEW MORE</h1>
+              </div>
+          </div>
             </div>
 
             <div class = "icons-content">
@@ -192,6 +199,11 @@
 
               <div class = "icons-img-box">
               <img src = "image/조각집 녹음.jpg">
+              <div class = "overlay">
+                <div class = "box-text">
+                  <h1>VIEW MORE</h1>
+                </div>
+            </div>
               </div>
 
               <div class = "icons-content">
@@ -250,8 +262,8 @@
       </div>
 
       <div class="INSTAGRAM_profile">
-        <div class="INSTAGRAM_title">
-          <p>#INSTAGRAM</p>
+        <div class = "INSTAGRAM-title">
+          <h1>INSTAGRAM</h1>
           <span></span>
         </div>
         <div class="profile-image_INSTA">
@@ -402,10 +414,10 @@
         <div id="PEED-button">+ 더 보기</div>
       </div>
 
-      <div class="Charactor">
+      <div class="YOUTUBE-container">
         <div class="YOUTUBE">
-          <div class="YOUTUBE_main_title">
-            <p>#YOUTUBE</p>
+          <div class="YOUTUBE-title">
+            <h1>YOUTUBE</h1>
             <span></span>
           </div>
           <div class="YOUTUBE_PROFILE">
@@ -473,6 +485,32 @@
               <h1>OFFICIAL M/V</h1>
               <div class="Channer_button">재생목록</div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "Character">
+        <div class = "Character-title">
+          <h1>Character</h1>
+          <span></span>
+        </div>
+
+        <div class = "Character-container">
+          <div class = "Character-item">
+            <img src = "image/Character/이지금.jpg">
+            <div class = "overlay"><h1>SINGER</h1></div>
+          </div>
+          <div class = "Character-item">
+            <img src = "image/Character/이지은.jpg">
+            <div class = "overlay"><h1>ACTOR</h1></div>
+            <h1>이지은</h1>
+          </div>
+          <div class = "Character-item">
+            <img src = "image/Character/이지동 사원증.jpg">
+            <div class = "overlay">
+              <h1>EDAM STAFF</h1>
+            </div>
+            <h1>이지동</h1>
           </div>
         </div>
       </div>
