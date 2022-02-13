@@ -19,11 +19,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script defer type="text/javascript" src="Onclick.js"></script>
-    <script defer src="slider.js"></script>
-    <script defer src="PEED_onclick.js"></script>
-    <script defer src="SliderText.js"></script>
-    <script defer src="active.js"></script>
-    <script defer src="scroll.js"></script>
+    <script defer src="js/active.js"></script>
+    <script defer src="js/PEED_onclick.js"></script>
+    <script defer src="js/Onclick.js"></script>
+    <script defer src="js/scroll.js"></script>
+    <script defer src="js/SliderText.js"></script>
   </head>
 
   <body>
@@ -155,13 +155,14 @@
         </div>
       </div>
 
+      <div class = "NEWS-title TITLE_animated">
+        <i class='bx bxs-news'></i>
+        <h1>BREAKING NEWS</h1>
+      </div>
+      
       <div class = "NEWS-container" id = "NEWS">
-        <div class = "NEWS-title">
-          <i class='bx bxs-news'></i>
-          <h1>BREAKING NEWS</h1>
-        </div>
 
-        <div class = "NEWS-icons animated">
+        <div class = "NEWS-icons ICONS-animated">
 
           <div class = "icons-box">
 
@@ -175,7 +176,7 @@
           </div>
 
           <div class = "icons-content">
-          <h1>"EDAM ENTERTAINMENT" 유애나 5기 모집</h1>
+          <h1>"멜론 티켓" 유애나 5기 모집 진행중</h1>
           </div>
           </div>
           <div class = "icons-box">
@@ -214,6 +215,7 @@
 
         </div>
 
+        <div class = "NEWS-items ITEMS_animated">
         <div class = "NEWS-item">
           <div class = "NEWS-content">
           <div class = "NEWS-sub-title">
@@ -233,7 +235,7 @@
         <div class = "NEWS-item">
           <div class = "NEWS-content">
           <div class = "NEWS-sub-title">
-            <h1>2022 팹시 파트너 아이유! 펩시 제로 슈거와 함께하는 비주얼 파티 CF 공개</h1>
+            <h1>2022 팹시 파트너 아이유! <br>펩시 제로 슈거와 함께하는 비주얼 파티 CF 공개</h1>
             <p>펩시는 지난 24일 오후 8시 '2022 펩시 파트너'로 선정된 아이유의 파티 콘셉트 펩시 제로 슈거 포토를 공개했다. </p>
           </div>
           <div class = "NEWS-button">
@@ -245,14 +247,15 @@
           </div>
         </div>
       </div>
+      </div>
       
       
       <div class="PART">
         <div class="PART_content">
           <div class="PART_content1">
-            <p>#INSTAGRAM</p>
-            <p>#YOUTUBE</p>
             <p>#CHARACTER</p>
+            <p>#FAN CAFE</p>
+            <p>#SOCIAL</p>
           </div>
 
           <div class="PART_content2">
@@ -261,11 +264,38 @@
         </div>
       </div>
 
-      <div class="INSTAGRAM_profile">
+      
+      <div class = "Character">
+        <div class = "Character-title">
+          <h1>Character</h1>
+          <span></span>
+        </div>
+
+        <div class = "Character-container">
+          <div class = "Character-item">
+            <img src = "image/Character/이지금.jpg">
+            <div class = "overlay"><h1>SINGER</h1></div>
+          </div>
+          <div class = "Character-item">
+            <img src = "image/Character/장만월.jpg">
+            <div class = "overlay"><h1>ACTOR</h1></div>
+          </div>
+          <div class = "Character-item">
+            <img src = "image/Character/이지동 사원증.jpg">
+            <div class = "overlay">
+              <h1>EDAM STAFF</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="INSTAGRAM_profile INSTAGRAM_animated">
+
         <div class = "INSTAGRAM-title">
           <h1>INSTAGRAM</h1>
           <span></span>
         </div>
+
         <div class="profile-image_INSTA">
           <img src="image/프로필 사진/인스타 프로필.png" />
         </div>
@@ -414,7 +444,7 @@
         <div id="PEED-button">+ 더 보기</div>
       </div>
 
-      <div class="YOUTUBE-container">
+      <div class="YOUTUBE-container YOUTUBE_animated">
         <div class="YOUTUBE">
           <div class="YOUTUBE-title">
             <h1>YOUTUBE</h1>
@@ -489,31 +519,6 @@
         </div>
       </div>
 
-      <div class = "Character">
-        <div class = "Character-title">
-          <h1>Character</h1>
-          <span></span>
-        </div>
-
-        <div class = "Character-container">
-          <div class = "Character-item">
-            <img src = "image/Character/이지금.jpg">
-            <div class = "overlay"><h1>SINGER</h1></div>
-          </div>
-          <div class = "Character-item">
-            <img src = "image/Character/이지은.jpg">
-            <div class = "overlay"><h1>ACTOR</h1></div>
-            <h1>이지은</h1>
-          </div>
-          <div class = "Character-item">
-            <img src = "image/Character/이지동 사원증.jpg">
-            <div class = "overlay">
-              <h1>EDAM STAFF</h1>
-            </div>
-            <h1>이지동</h1>
-          </div>
-        </div>
-      </div>
     </section>
 
     <footer>
@@ -567,11 +572,4 @@
       </div>
     </footer>
   </body>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-    });
-  </script>
 </html>
