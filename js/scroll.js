@@ -58,6 +58,19 @@ function YOUTUBE_animated() {
   }
 }
 
+function PART_ANIMATED() {
+  let container = document.querySelector(".PART");
+  let windowHeight = window.innerHeight;
+  let item1 = container.getBoundingClientRect().top;
+
+  if (item1 < windowHeight - 400) {
+    container.classList.add("active");
+  } else {
+    container.classList.remove("active");
+  }
+}
+
+window.addEventListener("scroll", PART_ANIMATED);
 window.addEventListener("scroll", ICONS_animated);
 window.addEventListener("scroll", TITLE_animated);
 window.addEventListener("scroll", ITEMS_animated);

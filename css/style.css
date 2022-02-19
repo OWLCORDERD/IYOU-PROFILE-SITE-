@@ -536,29 +536,118 @@ aside nav ul li.fix a {
 
 .PART {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   position: relative;
-  width: 100%;
-  height: auto;
-  background-image: url("/image/프로필\ 사진/flower.jpg");
+  width: 90%;
+  height: 900px;
+  background-image: url("/image/예비3.jpg");
   background-attachment: fixed;
-  background-position: center;
+  background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: #000;
-  padding: 7rem;
-  margin: 5rem 0;
+  background-color: #fff;
+  margin: 5rem 5rem;
 }
 
-.PART::after {
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+.PART-animated {
+  width: 90%;
+  height: 900px;
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.PART-animated.active {
+  opacity: 1;
+}
+
+.PART .PART_content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.PART .PART_content .profile-content {
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  padding: 2rem;
+}
+
+.PART .PART_content .profile-content .profile-title {
+  font-family: var(--font-family-two);
+  font-size: 4em;
+}
+
+.PART .PART_content .profile-content .profile-name {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 2.5rem 0;
+}
+
+.PART .PART_content .profile-content .profile-name p:first-child {
+  font-family: var(--font-family);
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.PART .PART_content .profile-content .profile-name p:nth-child(2) {
+  font-family: var(--font-family);
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+.PART .PART_content .profile-content .profile-name p:nth-child(3) {
+  font-family: var(--font-family);
+  color: #aaa;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 10%;
+}
+
+.PART .PART_content .profile-content .profile-sub-content {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+.PART .PART_content .profile-content .social-sub-content {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.PART .PART_content .profile-content .social-sub-content i {
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.PART .PART_content .profile-content .social-sub-content img {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.PART .PART_content .profile-content .profile-sub-content i {
+  font-size: 3em;
+}
+
+.PART .PART_content .profile-content .profile-sub-content img {
+  width: 50px;
+  height: 50px;
+}
+
+.PART .PART_content .profile-content .profile-sub-content h1 {
+  font-family: var(--font-family-two);
+  font-size: 1.5em;
+}
+
+.PART .PART_content .profile-content .company-img {
+  width: 150px;
 }
 
 .PART2 {
@@ -610,41 +699,6 @@ aside nav ul li.fix a {
     right: -50%;
     opacity: 0;
   }
-}
-
-.PART .PART_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  font-family: var(--font-family);
-  color: #fff;
-  width: 50%;
-  position: relative;
-  z-index: 10;
-  animation: slideText 1s ease-in;
-}
-
-.PART .PART_content .PART_content1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.PART .PART_content .PART_content1 p {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.PART .PART_content .PART_content2 {
-  margin: 3rem 0 0 0;
-}
-
-.PART .PART_content .PART_content2 h1 {
-  font-size: 4em;
-  font-weight: bold;
 }
 
 .PART2 .PART_content {
@@ -1129,20 +1183,43 @@ aside nav ul li.fix a {
 }
 
 .cafelink_container {
-  width: 80%;
+  width: 100%;
   height: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0 6rem 0 2rem;
+}
+
+.cafelink_container .cafelink_button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.cafelink_container .cafelink_button:hover {
+  background-color: #fd4949;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cafelink_container .cafelink_button:hover i {
+  color: #fff;
 }
 
 .cafelink_container i {
+  width: 30%;
   font-size: 4em;
   color: #fd4949;
+  text-align: center;
 }
 
 .cafelink_container h1 {
-  font-size: 1.5em;
+  width: 70%;
+  font-size: 1.2em;
+  font-family: var(--font-family);
+  text-align: center;
 }
 
 /* 인스타 프로필 flexbox css */
