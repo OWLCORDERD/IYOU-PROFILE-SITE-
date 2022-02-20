@@ -51,6 +51,7 @@ body {
 header .header_nav {
   position: sticky;
   top: 0;
+  left : 0;
   width: 100%;
   height: 20vh;
   display: flex;
@@ -215,7 +216,7 @@ header .header_nav ul li:hover::after {
   text-align: center;
 }
 
-/*소개 영역 flexbox 3가지 css */
+/*소개 영역 flexbox item 4개 css */
 .profile .introduce_2 {
   position: relative;
   width: 100%;
@@ -251,7 +252,7 @@ header .header_nav ul li:hover::after {
   color: #fff;
 }
 
-/* section 영역 */
+/* section 반응형 영역 */
 section {
   display: inline-block;
   position: relative;
@@ -534,13 +535,15 @@ aside nav ul li.fix a {
   margin-top: 5px;
 }
 
+/* 아이유 PROFILE 소개 FLEXBOX 영역 */
+
 .PART {
   display: flex;
   align-items: center;
   position: relative;
   width: 90%;
   height: 900px;
-  background-image: url("/image/예비3.jpg");
+  background-image: url("/image/예비2.jpg");
   background-attachment: fixed;
   background-position: right;
   background-size: contain;
@@ -549,23 +552,26 @@ aside nav ul li.fix a {
   margin: 5rem 5rem;
 }
 
-.PART-animated {
-  width: 90%;
-  height: 900px;
-  opacity: 0;
-  transition: 1s all ease;
-}
-
-.PART-animated.active {
-  opacity: 1;
-}
-
 .PART .PART_content {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+}
+
+
+.PART-animated{
+    width : 50%;
+    opacity: 0;
+    transition: 1.5s all ease;
+    transform: translateX(-150px);
+}
+
+.PART-animated.active{
+    width : 50%;
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .PART .PART_content .profile-content {
@@ -581,7 +587,7 @@ aside nav ul li.fix a {
 .PART .PART_content .profile-content .profile-name {
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 60%;
   margin: 2.5rem 0;
 }
 
@@ -649,6 +655,8 @@ aside nav ul li.fix a {
 .PART .PART_content .profile-content .company-img {
   width: 150px;
 }
+
+/* IU NEWS UPDATE 배너 */
 
 .PART2 {
   display: flex;
@@ -841,42 +849,6 @@ aside nav ul li.fix a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.NEWS-container .NEWS-icons .icons-box .icons-img-box .overlay {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.7);
-  transition: all 0.3s linear;
-}
-
-.NEWS-container .NEWS-icons .icons-box .icons-img-box .box-text {
-  position: absolute;
-  width: 120px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  border: 5px solid #fff;
-  border-radius: 1rem;
-}
-
-.NEWS-container .NEWS-icons .icons-box .icons-img-box .box-text h1 {
-  font-family: var(--font-family);
-  font-weight: bold;
-  font-size: 1.2em;
-  color: #fff;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-.NEWS-container .NEWS-icons .icons-box .icons-img-box:hover .overlay {
-  opacity: 1;
-  cursor: pointer;
 }
 
 .NEWS-container .NEWS-icons .icons-box .icons-content {

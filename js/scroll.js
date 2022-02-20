@@ -58,8 +58,8 @@ function YOUTUBE_animated() {
   }
 }
 
-function PART_ANIMATED() {
-  let container = document.querySelector(".PART");
+function PART_animated() {
+  let container = document.querySelector(".PART .PART_content");
   let windowHeight = window.innerHeight;
   let item1 = container.getBoundingClientRect().top;
 
@@ -70,7 +70,7 @@ function PART_ANIMATED() {
   }
 }
 
-window.addEventListener("scroll", PART_ANIMATED);
+window.addEventListener("scroll", PART_animated);
 window.addEventListener("scroll", ICONS_animated);
 window.addEventListener("scroll", TITLE_animated);
 window.addEventListener("scroll", ITEMS_animated);

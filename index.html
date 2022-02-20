@@ -18,7 +18,7 @@
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script defer type="text/javascript" src="Onclick.js"></script>
+    <script defer type="text/javascript" src="js/Onclick.js"></script>
     <script defer src="js/active.js"></script>
     <script defer src="js/PEED_onclick.js"></script>
     <script defer src="js/Onclick.js"></script>
@@ -91,29 +91,6 @@
         <span></span>
       </div>
 
-      <div class="mobile">
-        <div class="mobile-slider">
-          <img src="image/banner li img/조각집.jpg" />
-        </div>
-
-        <div class="content">
-          <h1>I'YOU</h1>
-        </div>
-
-        <div class="content_sub">
-          <h1>INFORMATION IU SITE</h1>
-        </div>
-        <div class="banner-navbar">
-          <nav>
-            <ul>
-              <li><a href="#">PROFILE</a></li>
-              <li><a href="music.html">MUSIC</a></li>
-              <li><a href="#">ACT</a></li>
-              <li><a href="#">FASHION</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
     </div>
 
     <aside>
@@ -138,11 +115,11 @@
               </div>
             </div>
           </li>
-          <li class="fix"><i class='bx bxs-news'></i><a href="#NEWS">I'YOU NEWS</a></li>
-          <li><i class='bx bxs-home' ></i><a href="#">HOME</a></li>
-          <li><i class='bx bxl-instagram-alt'></i><a href="music.html">INSTAGRAM</a></li>
-          <li><i class='bx bxl-youtube' ></i><a href="music.html">YOUTUBE</a></li>
-          <li><i class='bx bx-group'></i><a href="#">CHARACTER</a></li>
+          <li class="fix"><i class='bx bxs-news' onclick= "location.href = '#NEWS'"></i><a href="#NEWS">I'YOU NEWS</a></li>
+          <li><i class='bx bxs-home' onclick= "location.href = '#HOME'"></i><a href="#">HOME</a></li>
+          <li><i class='bx bx-group' onclick="location.href = '#character'"></i><a href="#">CHARACTER</a></li>
+          <li><i class='bx bxl-instagram-alt' onclick= "location.href = '#INSTA'"></i><a href="music.html">INSTAGRAM</a></li>
+          <li><i class='bx bxl-youtube' onclick= "location.href = '#YOUTUBE'"></i><a href="music.html">YOUTUBE</a></li>
         </ul>
       </nav>
     </aside>
@@ -155,12 +132,12 @@
         </div>
       </div>
 
-      <div class = "NEWS-title TITLE_animated">
+      <div class = "NEWS-title TITLE_animated" id = "NEWS">
         <i class='bx bxs-news'></i>
         <h1>BREAKING NEWS</h1>
       </div>
       
-      <div class = "NEWS-container" id = "NEWS">
+      <div class = "NEWS-container">
 
         <div class = "NEWS-icons ICONS-animated">
 
@@ -168,11 +145,6 @@
 
             <div class = "icons-img-box">
           <img src = "image/유애나5기.jpg">
-            <div class = "overlay">
-              <div class = "box-text">
-                <h1>VIEW MORE</h1>
-              </div>
-          </div>
           </div>
 
           <div class = "icons-content">
@@ -183,11 +155,6 @@
 
             <div class = "icons-img-box">
             <img src = "image/펩시 제로.jpg">
-            <div class = "overlay">
-              <div class = "box-text">
-                <h1>VIEW MORE</h1>
-              </div>
-          </div>
             </div>
 
             <div class = "icons-content">
@@ -196,15 +163,11 @@
               </div>
 
             </div>
+
             <div class = "icons-box">
 
               <div class = "icons-img-box">
               <img src = "image/조각집 녹음.jpg">
-              <div class = "overlay">
-                <div class = "box-text">
-                  <h1>VIEW MORE</h1>
-                </div>
-            </div>
               </div>
 
               <div class = "icons-content">
@@ -250,9 +213,9 @@
       </div>
       
       
-      <div class="PART PART-animated">
+      <div class="PART" id = "HOME">
 
-        <div class="PART_content">
+        <div class= "PART_content PART-animated">
 
           <div class = "profile-content">
           
@@ -302,7 +265,7 @@
         </div>
 
       
-      <div class = "Character">
+      <div class = "Character" id = "character">
         <div class = "Character-title">
           <h1>Character</h1>
           <span></span>
@@ -432,7 +395,7 @@
         </div>
       </div>
 
-      <div class="INSTAGRAM_profile INSTAGRAM_animated">
+      <div class="INSTAGRAM_profile INSTAGRAM_animated" id = "INSTA">
 
         <div class = "INSTAGRAM-title">
           <h1>INSTAGRAM</h1>
@@ -587,7 +550,7 @@
         <div id="PEED-button">+ 더 보기</div>
       </div>
 
-      <div class="YOUTUBE-container YOUTUBE_animated">
+      <div class="YOUTUBE-container YOUTUBE_animated" id = "YOUTUBE">
         <div class="YOUTUBE">
           <div class="YOUTUBE-title">
             <h1>YOUTUBE</h1>
