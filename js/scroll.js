@@ -3,22 +3,10 @@ function ICONS_animated() {
   let windowHeight = window.innerHeight;
   let item = ICONS.getBoundingClientRect().top;
 
-  if (item < windowHeight - 500) {
+  if (item < windowHeight - 300) {
     ICONS.classList.add("active");
   } else {
     ICONS.classList.remove("active");
-  }
-}
-
-function TITLE_animated() {
-  let title = document.querySelector(".NEWS-title");
-  let windowHeight = window.innerHeight;
-  let item2 = title.getBoundingClientRect().top;
-
-  if (item2 < windowHeight - 400) {
-    title.classList.add("active");
-  } else {
-    title.classList.remove("active");
   }
 }
 
@@ -27,7 +15,7 @@ function ITEMS_animated() {
   let windowHeight = window.innerHeight;
   let item3 = ITEMS.getBoundingClientRect().top;
 
-  if (item3 < windowHeight - 400) {
+  if (item3 < windowHeight - 200) {
     ITEMS.classList.add("active");
   } else {
     ITEMS.classList.remove("active");
@@ -72,7 +60,6 @@ function PART_animated() {
 
 window.addEventListener("scroll", PART_animated);
 window.addEventListener("scroll", ICONS_animated);
-window.addEventListener("scroll", TITLE_animated);
 window.addEventListener("scroll", ITEMS_animated);
 window.addEventListener("scroll", INSTAGRAM_animated);
 window.addEventListener("scroll", YOUTUBE_animated);

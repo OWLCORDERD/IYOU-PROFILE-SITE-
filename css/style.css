@@ -51,7 +51,7 @@ body {
 header .header_nav {
   position: sticky;
   top: 0;
-  left : 0;
+  left: 0;
   width: 100%;
   height: 20vh;
   display: flex;
@@ -543,7 +543,7 @@ aside nav ul li.fix a {
   position: relative;
   width: 90%;
   height: 900px;
-  background-image: url("/image/예비2.jpg");
+  background-image: url("/image/예비3.jpg");
   background-attachment: fixed;
   background-position: right;
   background-size: contain;
@@ -560,18 +560,17 @@ aside nav ul li.fix a {
   justify-content: flex-end;
 }
 
-
-.PART-animated{
-    width : 50%;
-    opacity: 0;
-    transition: 1.5s all ease;
-    transform: translateX(-150px);
+.PART-animated {
+  width: 50%;
+  opacity: 0;
+  transition: 1.5s all ease;
+  transform: translateX(-150px);
 }
 
-.PART-animated.active{
-    width : 50%;
-    transform: translateX(0);
-    opacity: 1;
+.PART-animated.active {
+  width: 50%;
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .PART .PART_content .profile-content {
@@ -735,59 +734,18 @@ aside nav ul li.fix a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5rem 0;
-}
-
-.NEWS-title i {
-  width: 5rem;
-  height: 5rem;
-  margin: 1rem 0;
-  font-size: 5rem;
-  color: #aaa;
-}
-
-.NEWS-title h1 {
-  font-family: var(--font-family-two);
-  margin: 1rem 0;
-  text-align: center;
-  font-size: 2em;
-  color: #aaa;
+  margin: 0 0 10rem 0;
 }
 
 .NEWS-title {
   width: 100%;
-  margin: 5rem 0;
+  margin: 5rem 0 0 0;
   text-align: center;
 }
 
-/* NEWS 제목 scroll animation */
-.TITLE_animated {
-  width: 100%;
-  opacity: 0;
-  transition: 1s all ease-in-out;
-  transform: translateY(150px);
-}
-
-.TITLE_animated.active {
-  width: 100%;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.NEWS-container .NEWS-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 27rem;
-  border-radius: 2rem;
-  padding: 1rem;
-  margin: 2rem 0;
-}
-
-.NEWS-container .NEWS-items {
-  width: 100%;
+.NEWS-title img {
+  width: 10rem;
+  height: 10rem;
 }
 
 /* NEWS 아이템 2개 scroll animation */
@@ -838,8 +796,8 @@ aside nav ul li.fix a {
 
 .NEWS-container .NEWS-icons .icons-box .icons-img-box {
   position: relative;
-  width: 230px;
-  height: 250px;
+  width: 180px;
+  height: 230px;
   box-shadow: 8px 6px 10px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
@@ -851,39 +809,74 @@ aside nav ul li.fix a {
   object-fit: cover;
 }
 
-.NEWS-container .NEWS-icons .icons-box .icons-content {
+.NEWS-container .NEWS-items-title {
   width: 100%;
-  height: 10rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.NEWS-container .NEWS-items-title i {
+  font-size: 3em;
+}
+
+.NEWS-container .NEWS-items-title h1 {
+  font-family: var(--font-family-two);
+  font-size: 2.5em;
+  margin-left: 1rem;
+}
+
+.NEWS-container .NEWS-items {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.NEWS-container .NEWS-icons .icons-box .icons-content h1 {
-  font-family: var(--font-family);
-  font-weight: bold;
-  font-size: 1.8em;
-  word-break: keep-all;
-  width: 230px;
-  text-align: center;
+.NEWS-container .NEWS-items::before {
+  width: 80%;
+  content: "";
+  height: 10px;
+  background-color: #000;
+}
+
+.NEWS-container .NEWS-items::after {
+  width: 80%;
+  content: "";
+  height: 10px;
+  background-color: #000;
+}
+
+.NEWS-container .NEWS-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 15rem;
+  padding: 1rem;
+  border-bottom: 5px solid #aaa;
+}
+
+.NEWS-container .NEWS-item:hover {
+  transform: scale(1.01);
+  cursor: pointer;
 }
 
 .NEWS-container .NEWS-item .NEWS-img {
-  height: 20rem;
+  width: 10rem;
+  height: 12rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .NEWS-container .NEWS-item .NEWS-img img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.NEWS-container .NEWS-item .NEWS-img .img2 {
-  width: 233px;
   height: 100%;
   object-fit: cover;
 }
@@ -897,12 +890,12 @@ aside nav ul li.fix a {
 
 .NEWS-container .NEWS-item .NEWS-content {
   width: 50%;
-  height: 20rem;
+  height: 15rem;
 }
 
 .NEWS-container .NEWS-item .NEWS-content .NEWS-sub-title {
   width: 100%;
-  height: 15rem;
+  height: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -910,23 +903,39 @@ aside nav ul li.fix a {
 
 .NEWS-container .NEWS-item .NEWS-content .NEWS-sub-title h1 {
   font-family: var(--font-family);
-  font-size: 2em;
+  font-size: 1.5em;
   word-wrap: break-word;
 }
 
 .NEWS-container .NEWS-item .NEWS-content .NEWS-sub-title p {
   font-family: var(--font-family);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   color: var(--title-color);
   word-break: keep-all;
+}
+
+.NEWS-container .NEWS-item .NEWS-content .NEWS-sub-date {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.NEWS-container .NEWS-item .NEWS-content .NEWS-sub-date p {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #aaa;
+  text-align: center;
 }
 
 .NEWS-container .NEWS-item .NEWS-content .NEWS-button {
   margin: 2rem 0;
 }
 
-.NEWS-container .NEWS-item .NEWS-content .NEWS-button input[type="submit"] {
+.NEWS-container .NEWS-items .NEWS-button input[type="submit"] {
   width: 150px;
   height: 60px;
   border-radius: 0.5rem;
@@ -937,13 +946,10 @@ aside nav ul li.fix a {
   font-size: 1.2em;
   cursor: pointer;
   transition: all 0.5s ease-in;
+  margin: 2rem 0;
 }
 
-.NEWS-container
-  .NEWS-item
-  .NEWS-content
-  .NEWS-button
-  input[type="submit"]:hover {
+.NEWS-container .NEWS-items .NEWS-button input[type="submit"]:hover {
   background-color: #fff;
   border: 3px solid #000;
   color: #000;
